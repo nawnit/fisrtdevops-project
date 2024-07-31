@@ -8,4 +8,3 @@ RUN curl -O http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.54/bin/apache-to
 RUN tar zxvf apache-tomcat-8.5.54.tar.gz -C /root/apache-tomcat-8.5.54/.  --strip-components=1
 COPY target/firstdevops-project.war /root/apache-tomcat-8.5.54/webapps
 ENTRYPOINT /root/apache-tomcat-8.5.54/bin/startup.sh && bash
-
